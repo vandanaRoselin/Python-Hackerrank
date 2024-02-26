@@ -1,0 +1,118 @@
+# Append and Extend: # Create an empty list and append three elements to it.
+empty_list = [ ]
+if not empty_list:
+    print("List is empty")
+empty_list1 = [1,2,3]
+empty_list.append(empty_list1)
+# empty_list.append()
+print(empty_list)
+
+print("**********************************")
+# Create two lists, and then extend the first list by adding elements from the second list.
+my_list1 = [1,2,3,4,5]
+my_list2 = [6,7,8,9,10]
+my_list1.extend(my_list2) # here we extending one list to another list
+print(my_list1)
+
+print("**********************************")
+
+# Insert and Remove: # Create a list of fruits, then insert "banana" at the second position.
+my_fruits = ["Orange","Grapes","Mango","Chiku"]
+my_fruits.insert(1,"Banana") # here we are inserting banana in the 2nd position insert(index,object) means insert(1,Banana)
+print(my_fruits)
+
+print("**********************************")
+
+# Create a list of numbers, then remove the number 5 from the list.
+
+list_numbers = [1,2,3,4,5,6,7,8,9,5]
+list_numbers.remove(5) # here we removing one element from list suppose 5 it remove from the list.
+print(list_numbers)
+
+print("**********************************")
+
+# Index and Count: # Create a list of colors and find the index of "red".
+my_list = ["blue","green","red","purple"]
+index = my_list.index("red") # here we are finding the index of red means in which index red is placed output is 2.
+print(index)
+my_list1 = my_list.pop(0)
+print(my_list1)
+print("**********************************")
+# Create a list of numbers and count how many times the number 7 appears.
+my_list = [1,2,3,4,7,7,6,7,8,7]
+count = my_list.count(7) # here we are counting number 7 how many times it occur in this list  that is  output is 4.
+print(count)
+
+print("**********************************")
+
+# Reverse and Sort: # Create a list of letters, then reverse the order of the elements.
+
+my_list = ['a','b','c','d','e','f']
+my_list.reverse() # here we are reversing the list.
+print(my_list)
+
+print("**********************************")
+# Create a list of numbers, then sort it in ascending order and descending order.
+my_list = [1,2,3,4,-2,-1,5]
+my_list.sort()  # in ascending order we should use sort() it default ascending oder display
+print(my_list)
+
+my_list = [1,2,3,4,-2,-1,5]
+my_list.sort(reverse=True) # in descending order we should use .sort(reverse=True) then it show descending order.
+print(my_list)
+
+print("**********************************")
+# Copy and Clear: # Create a list of animals, then create a copy of the list.
+my_list = ["Tiger","Lion","Cow","Dog","Cat"]
+my_list1 = my_list.copy() # when we need to copy one list to another list we should use list_name.copy(),it copy.
+print(my_list1)
+my_list1.insert(2,"Hyena")
+print(my_list1)
+
+print("**********************************")
+# Create a list of elements, then clear all elements from the list.
+my_list = [1,2,3,4,5,6,7,8,9,10]
+my_list.clear() # when we need to clear our list we should use list_name.clear(),it clear our list.
+print(my_list)
+
+print("**********************************")
+# List Comprehensions: # Create a list of squares of numbers from 1 to 5 using list comprehension.
+squares = [x**2 for x in range(6)] # to finding list of square of numbers.
+print(squares)
+
+print("**********************************")
+# Create a list of even numbers from 1 to 10 using list comprehension.
+even = [x for x in range(10) if x % 2 == 0]  # for to find the even numbers
+print(even)
+
+odd = [x for x in range(10) if x % 2 == 1]  # for to find the odd numbers
+print(odd)
+
+print("**********************************")
+
+# Other Methods: # Create a list of names and use pop() to remove and return the last element.
+my_list = ["Rohit","Sneha","Peter","John","Seema","Jina"]
+my_list1 = my_list.pop(2) # Pop() is using to return the last value in the list,if we give any value in pop(2) then it give/return that index value like peter.
+print(my_list1)
+
+my_list=[1, 2, 7, 3, 4, 5, 6,3]
+u=my_list.pop(2)
+print(u)
+
+print("**********************************")
+# Create a list of cities and use index() to find the index of "Paris".
+
+my_cities = ["Bangalore","Delhi","Kolkata","Paris","Hyderabad"]
+cities = my_cities.index("Paris") # to find the index number,its return index value
+cities1 = my_cities.pop(1) # .pop() is use to to remove tha value and return the value. And also by default it remove last element of the list and return the value.
+print(cities) # output =3
+print(cities1) # output = Delhi
+
+print("**********************************")
+# Checking Length of list.
+
+my_list = ['a','b',"vandana","Roselin"]
+print(len(my_list)) # Here its checking only elements without including space.Output: 4
+print(type(my_list)) # type of class
+check1="karan !!" # here its checking each variables with including space .Output: 8
+print(len(check1))
