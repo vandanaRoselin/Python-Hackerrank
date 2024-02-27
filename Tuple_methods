@@ -55,6 +55,14 @@ print(Karthik)
 print(Sudha)
 print(f"{Mahesh},{Radha},{Karthik},{Sudha}")
 
+output:--
+Father
+Mother
+Son
+Daughter
+
+Father,Mother,Son,Daughter
+
 print("*****************************************************")
 
 #    - Given a tuple `(1, 2, 3, 4, 5)`, unpack it into five variables and print them individually.
