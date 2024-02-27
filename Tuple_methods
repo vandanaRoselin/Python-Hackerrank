@@ -1,0 +1,225 @@
+#some basic problem questions related to tuple methods:
+
+my_tuple = (1, 2, 3, 4, 5,6,7,8,9,10)
+print(my_tuple)
+print(type(my_tuple))
+check= ('a','b','c','b',1,2,"#","Vandana","Roselin"  ) # Here its checking lenth only elements without including space.Output: 9
+check1="karan !! #,'a'"# here its checking lenth of each variables with including space.Output: 8
+print(len(check))
+print(len(check1))
+print(len(my_tuple))   # Output: 10
+print(3 in my_tuple)   # Output: True //to check that element is in the tuple if it is there then it give True or if not then False
+print(6 in my_tuple)   # Output: True
+print(11 in my_tuple)  # Output: False
+print(12 in my_tuple)  # Output: False
+
+print("*****************************************************")
+my_tuple = (1, 2, 3, 4, 5,6,7,8,9,10)
+for i in range(1,7): # to find the range of the tuple we use for loop,we if give range(1,7),then output :1234567 horizontal form
+ print(i)
+
+print("*****************************************************")
+my_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+print(my_tuple[4]) # here finding  the index of value,here in index 4 its having value is 5. # Output: 5
+print(my_tuple[3]) # here finding  the index of value,here in index 3 its having value is 4. # Output: 4
+print(my_tuple[9])  # here finding  the index of value,here in index 9 its having value is 10. # Output: 10
+
+print("*****************************************************")
+
+my_tuple = (1, 2, 3, 2, 4, 2, 5)
+print(my_tuple.count(2)) #here count the elements number of times it occurences in the tuple.Output: 3 will return no of occurences of value
+print(my_tuple.count(4)) #  here count the elements number of times it occurences in the tuple.Output: 1 will return no of occurences of value
+print(my_tuple.index(1))  # here elements value in which index they are it shows. Output: value 1 will return its index 0
+print(my_tuple.index(2)) # here elements value in which index they are it shows. Output: value 2 will return its index 1,here value 2 are occur 3 times its executes first one first then second then third.
+
+print("*****************************************************")
+# Tuple Packing and Unpacking: # Create a tuple containing your first name, last name, and age. Then, unpack this tuple into three variables.
+
+my_tuple = ("Jona","Warner",'35') # packing is a my_tuple container of elements
+(name,last_name,age) = my_tuple # unpacking is a assining variables to that particular elements.
+print(name)
+print(last_name)
+print(age)
+
+print("*****************************************************")
+#    - Given a tuple `(1, 2, 3, 4, 5)`, unpack it into five variables and print them individually.
+my_tuple = (1,2,3,4,5) # packing
+(a,b,c,d,e) = my_tuple # unpacking
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+
+print("*****************************************************")
+# tuple Concatenation and Repetition**: # Create two tuples, `tuple1 = (1, 2, 3)` and `tuple2 = (4, 5, 6)`. Concatenate them and print the result.
+
+tuple1 = (1, 2, 3)
+tuple2 = (4, 5, 6)
+concatenated_tuple = tuple1 + tuple2 # here adding number of tuples in one tuple
+print(concatenated_tuple)
+
+print("*****************************************************")
+
+# Repeat the tuple `(10, 20, 30)` three times and print the resulting tuple.
+tuple_1= (10, 20, 30)
+repeated_tuple = tuple_1 * 3 # here repeating the tuples number of times using *2 or *3 it also adds (10, 20, 30) + (10, 20, 30) =(10,20,30,10,20,30)
+print(repeated_tuple)
+
+
+# **Tuple Methods**:#Given a tuple `my_tuple = (1, 2, 3, 4, 5)`, use the `index()` method to find the index of the element `3`.
+my_tuple = (1,2,3,4,5)
+print(my_tuple.index(3))
+
+print("*****************************************************")
+
+ # Create a tuple with repeated elements and use the `count()` method to count the occurrence of a specific element.
+
+my_tuple = (1,2,3,4)
+repeated_tuple = my_tuple * 3
+print(repeated_tuple)
+print(my_tuple.count(4))
+print(repeated_tuple.count(4))
+
+print("*****************************************************")
+
+ # Immutable Nature of Tuples**: #Attempt to modify an element in a tuple and observe the error message.
+ # my_tuple = (1,2,4,5,6)
+ # print(my_tuple.add(3))
+
+print("*****************************************************")
+
+ # #Try to append a new element to an existing tuple and see what happens.
+ # my_tuple = (1,2,4,5,6)
+# print(my_tuple.append(3))
+
+print("*****************************************************")
+
+# Conversion Between Tuples and Other Data Types**:
+#Convert a list `[1, 2, 3]` into a tuple and print the result.
+
+#list(),tuple(),
+
+list_1 = [0,9,8,7]
+tuple_1= tuple(list_1) # this is one way to convert list to tuple or vice versa
+print(type(list_1))   #output = <class 'list'>
+print(tuple_1)        #output = (0, 9, 8, 7)
+
+
+list_2 = [1,3,5,7]
+print(tuple(list_2)) # this is another method to convert list to tuple and vice versa of all. output = (1, 3, 5, 7)
+print(set(list_2))  #output = {1, 3, 5, 7} list is converted into set
+
+tuple_2=(1,2,3,4)
+print(list(tuple_2)) #output = [1, 2, 3, 4] tuple converted into list
+print(set(tuple_2)) #output = {1, 2, 3, 4} tuple converted into set
+
+set_2 ={2,3,4,5}
+print(list(set_2))  #output = [2, 3, 4, 5] set converted into list
+print(tuple(set_2)) #output = (2, 3, 4, 5) set converted into tuple
+
+
+print("*****************************************************")
+#Convert a string `"hello"` into a tuple of characters and print it.
+
+my_string = "hello"
+my_string = tuple("hello")
+print(my_string)
+
+print("*****************************************************")
+ # Similar Other examples
+string_1 = list("Roselin") # it give string converted into character in the form of list
+string_2 = tuple("Roselin") # it give string converted into character in the form of tuple
+string_3 = set("Roselin") # it give string converted into character in the form of set
+
+print(string_1) # output = ['R', 'o', 's', 'e', 'l', 'i', 'n']
+print(string_2) # output = ('R', 'o', 's', 'e', 'l', 'i', 'n')
+print(string_3) # output = {'i', 'l', 'R', 'e', 's', 'n', 'o'}
+
+# if we need string to convert list,tuple,set then we should use flower brackets.
+string1 = list({"Roselin"}) # it give string converted into list
+string2 = tuple({"Roselin"}) # it give string converted into tuple
+string3 = set({"Roselin"}) # it give string converted into set
+
+print(string1) # output = ['Roselin']
+print(string2) # output = ('Roselin')
+print(string3) # output = {'Roselin'}
+
+
+print("*****************************************************")
+
+my_tuple = [1,2,3,4,5,6]
+print(my_tuple[2]) # it returns index value like 3
+print(my_tuple.index(6)) # it returns value of index like 5
+
+Output:---------------------------------------
+
+(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+<class 'tuple'>
+9
+14
+10
+True
+True
+False
+False
+*****************************************************
+1
+2
+3
+4
+5
+6
+*****************************************************
+5
+4
+10
+*****************************************************
+3
+1
+0
+1
+*****************************************************
+Jona
+Warner
+35
+*****************************************************
+1
+2
+3
+4
+5
+*****************************************************
+(1, 2, 3, 4, 5, 6)
+*****************************************************
+(10, 20, 30, 10, 20, 30, 10, 20, 30)
+2
+*****************************************************
+(1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4)
+1
+3
+*****************************************************
+*****************************************************
+*****************************************************
+<class 'list'>
+(0, 9, 8, 7)
+(1, 3, 5, 7)
+{1, 3, 5, 7}
+[1, 2, 3, 4]
+{1, 2, 3, 4}
+[2, 3, 4, 5]
+(2, 3, 4, 5)
+*****************************************************
+('h', 'e', 'l', 'l', 'o')
+*****************************************************
+['R', 'o', 's', 'e', 'l', 'i', 'n']
+('R', 'o', 's', 'e', 'l', 'i', 'n')
+{'s', 'i', 'R', 'n', 'l', 'e', 'o'}
+['Roselin']
+('Roselin',)
+{'Roselin'}
+*****************************************************
+3
+5
+
+Process finished with exit code 0
