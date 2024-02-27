@@ -46,6 +46,17 @@ print(last_name)
 print(age)
 
 print("*****************************************************")
+# packing & unpacking
+my_list = ["Father","Mother","Son","Daughter"]
+(Mahesh,Radha,Karthik,Sudha) = my_list
+print(Mahesh)
+print(Radha)
+print(Karthik)
+print(Sudha)
+print(f"{Mahesh},{Radha},{Karthik},{Sudha}")
+
+print("*****************************************************")
+
 #    - Given a tuple `(1, 2, 3, 4, 5)`, unpack it into five variables and print them individually.
 my_tuple = (1,2,3,4,5) # packing
 (a,b,c,d,e) = my_tuple # unpacking
