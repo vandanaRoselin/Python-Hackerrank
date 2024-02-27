@@ -1,3 +1,7 @@
+Tuple:---Remember that tuples are immutable, meaning once a tuple is created, 
+you cannot modify its elements. Therefore, methods like append(), insert(), 
+and remove() available in lists are not applicable to tuples.
+
 #some basic problem questions related to tuple methods:
 
 my_tuple = (1, 2, 3, 4, 5,6,7,8,9,10)
